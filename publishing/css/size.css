@@ -1,0 +1,22 @@
+.half{
+  width:50vw;
+  height: 100vh;
+  text-align: center;
+}
+aside{
+  width:240px;
+  height: 100vh;
+  text-align: right;
+}
+aside > h5 {
+  padding-top: 20px;
+  padding-right: 17px;
+}
+aside > h6 {
+  padding-top: 4px;
+  padding-right: 20px;
+}
+section{
+  width: calc(100vw - 240px);
+  background-color: rgb(240,240,240);
+}
