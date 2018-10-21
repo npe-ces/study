@@ -8,7 +8,7 @@ header{
   position: fixed;
   width:100vw;
   height: 33px;
-  background-color: white;
+  background-color: rgb(84, 82, 183);
   box-shadow: 0px 1px 2px 3px rgba(200,200,200,.2);
   z-index: 999;
   padding-top: 7px;
@@ -19,6 +19,22 @@ header>.header-right{
   text-align: left;
   padding-right: 2rem;
   display: inline-flex;
+}
+header>.header-right>.profile-icon{
+  width: 26px; 
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-right: 0.5rem;
+}
+header>.header-right>.profile-icon>img{
+  width: 24px; 
+  height: 24px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  border: 1px solid rgb(84, 82, 183);
+
 }
 header>.header-right>#search{
   height : 22px;
@@ -31,18 +47,40 @@ header>.header-right>#search{
 
 aside{
   width:240px;
-  padding-top:50px;
+  padding-top:40px;
   height: 100vh;
   position: fixed;
   text-align: right;
   background-color: rgb(255, 255, 255);
   box-shadow: 1px 0px 2px 3px rgba(200,200,200,.2);
+  
 }
-aside > h5 {
+aside>.background-pic{
+  height:100px;
+  overflow: hidden;
+}
+aside>.background-pic>img{
+  width: 240px;
+  opacity: .5;
+}
+aside>.profile-pic>img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    border: 0.5rem solid white;
+    left: 0;
+    top: 70%;
+    transform: translate(-160%,-50%);
+  
+}
+aside>.menu{
+  margin-top: -50px;
+}
+aside >.menu> h5 {
   padding-top: 20px;
   padding-right: 17px;
 }
-aside > h6 {
+aside >.menu> h6 {
   padding-top: 4px;
   padding-right: 20px;
 }

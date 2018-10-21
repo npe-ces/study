@@ -5,11 +5,13 @@
     font-weight: 600;
     border-radius: 20px;
 }
-.btn-default{
+.btn-default:hover{
     color: rgb(84, 82, 183);
     border: 1px solid rgb(84, 82, 183);
+    background-color: #fff;
 }
-.btn-default:hover{
+.btn-default{
     background-color:rgb(84, 82, 183);
     color: white;
+    border: 1px solid white;
 }
