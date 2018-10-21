@@ -1,0 +1,15 @@
+.btn{
+    padding: 5px 20px 2px 20px;
+    height: 18px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 20px;
+}
+.btn-default{
+    color: rgb(84, 82, 183);
+    border: 1px solid rgb(84, 82, 183);
+}
+.btn-default:hover{
+    background-color:rgb(84, 82, 183);
+    color: white;
+}
