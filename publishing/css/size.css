@@ -13,7 +13,7 @@ header{
   z-index: 999;
   padding-top: 7px;
   padding-bottom: -10px;
-} 
+}
 header>.header-right{
   float: right;
   text-align: left;
@@ -21,14 +21,14 @@ header>.header-right{
   display: inline-flex;
 }
 header>.header-right>.profile-icon{
-  width: 26px; 
+  width: 26px;
   height: 26px;
   border-radius: 50%;
   border: 1px solid white;
   margin-right: 0.5rem;
 }
 header>.header-right>.profile-icon>img{
-  width: 24px; 
+  width: 24px;
   height: 24px;
   object-fit: cover;
   object-position: top;
@@ -36,12 +36,21 @@ header>.header-right>.profile-icon>img{
   border: 1px solid rgb(84, 82, 183);
 
 }
-header>.header-right>#search{
+header>.header-right>.search{
   height : 22px;
   border: 1px solid rgb(84, 82, 183);
   border-radius: 18px;
   margin-right: 0.5rem;
-  padding: 1px 5px 2px 5px ;
+  padding: 4px 10px 0px 5px ;
+  background-color: white;
+}
+header>.header-right>.search>input{
+  margin-left:10px;
+  width : 120px;
+  border:none;
+}
+header>.header-right>.search>i{
+  opacity: .7;
 }
 
 
@@ -53,7 +62,7 @@ aside{
   text-align: right;
   background-color: rgb(255, 255, 255);
   box-shadow: 1px 0px 2px 3px rgba(200,200,200,.2);
-  
+
 }
 aside>.background-pic{
   height:100px;
@@ -71,9 +80,9 @@ aside>.profile-pic>img{
     left: 0;
     top: 70%;
     transform: translate(-160%,-50%);
-  
+
 }
-aside>.menu{
+aside>.non-pic-menu{
   margin-top: -50px;
 }
 aside >.menu> h5 {
@@ -88,7 +97,7 @@ section{
   width: calc(100vw - 240px);
   margin-left:240px;
   background-color: rgb(240,240,240);
-  padding: 2rem;
+  padding: 1rem;
   padding-top: calc(2rem + 23px);
   display: flex;
   flex-wrap: wrap;
@@ -147,4 +156,79 @@ section>.card-list>.bottom>.tag>p{
   margin-right: 2px;
   padding: 2px 5px 2px 5px;
   margin-top: 15px;
+}
+section>.character-list{
+  width: calc(50% - 6rem);
+  height: fit-content;
+  background-color: white;
+  padding: 2rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 15px;
+  display: inline;
+  word-break: break-all;
+}
+section>.character-list:last-child{
+  margin-right: 0;
+}
+section>.character-list>.summary{
+  display: flex;
+}
+section>.character-list>.summary>.profile-pic>img{
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}
+section>.character-list>.summary>.right{
+  margin-top: 5px;
+  margin-left: 10px;
+}
+section>.character-list>.detail{
+  padding-top: 20px;
+}
+
+@media (min-width: 1450px){
+  section > .card-list{
+    width: calc(25% - 2.5rem);
+    background-color: white;
+    margin: 0.75rem;
+    height: 400px;
+    position: relative;
+  }
+  section>.character-list{
+    width: calc(33.3% - 6rem);
+  }
+}
+@media (max-width: 1150px){
+  section > .card-list{
+    width: calc(50% - 2.5rem);
+    background-color: white;
+    margin: 0.75rem;
+    height: 400px;
+    position: relative;
+  }
+}
+@media (max-width: 845px){
+  section > .card-list{
+    width: calc(100% - 4rem);
+    background-color: white;
+    margin: 0.75rem;
+    height: 400px;
+    position: relative;
+  }
+  section>.character-list{
+    width: calc(100% - 6rem);
+  }
+  aside{
+    display: none;
+  }
+  section{
+    width: calc(100vw);
+    padding-top: calc(2rem + 23px);
+    margin-left: 0px;
+  }
+  .header-right>.btn{
+    display: none;
+  }
 }
