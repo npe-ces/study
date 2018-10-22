@@ -1,123 +1,133 @@
-.half{
-  width:50vw;
+.half {
+  width: 50%;
   height: 100vh;
   text-align: center;
 }
 
-header{
+header {
   position: fixed;
-  width:100vw;
+  width: 100vw;
   height: 33px;
   background-color: rgb(84, 82, 183);
-  box-shadow: 0px 1px 2px 3px rgba(200,200,200,.2);
+  box-shadow: 0px 1px 2px 3px rgba(200, 200, 200, .2);
   z-index: 999;
   padding-top: 7px;
   padding-bottom: -10px;
 }
-header>.header-right{
+
+header>.header-right {
   float: right;
   text-align: left;
   padding-right: 2rem;
   display: inline-flex;
 }
-header>.header-right>.profile-icon{
+
+header>.header-right>.profile-icon {
   width: 26px;
   height: 26px;
   border-radius: 50%;
   border: 1px solid white;
   margin-right: 0.5rem;
 }
-header>.header-right>.profile-icon>img{
+
+header>.header-right>.profile-icon>img {
   width: 24px;
   height: 24px;
   object-fit: cover;
   object-position: top;
   border-radius: 50%;
   border: 1px solid rgb(84, 82, 183);
-
 }
-header>.header-right>.search{
-  height : 22px;
+
+header>.header-right>.search {
+  height: 22px;
   border: 1px solid rgb(84, 82, 183);
   border-radius: 18px;
   margin-right: 0.5rem;
-  padding: 4px 10px 0px 5px ;
+  padding: 4px 10px 0px 5px;
   background-color: white;
 }
-header>.header-right>.search>input{
-  margin-left:10px;
-  width : 120px;
-  border:none;
+
+header>.header-right>.search>input {
+  margin-left: 10px;
+  width: 120px;
+  border: none;
 }
-header>.header-right>.search>i{
+
+header>.header-right>.search>i {
   opacity: .7;
 }
 
-
-aside{
-  width:240px;
-  padding-top:40px;
+aside {
+  width: 240px;
+  padding-top: 40px;
   height: 100vh;
   position: fixed;
   text-align: right;
   background-color: rgb(255, 255, 255);
-  box-shadow: 1px 0px 2px 3px rgba(200,200,200,.2);
-
+  box-shadow: 1px 0px 2px 3px rgba(200, 200, 200, .2);
 }
-aside>.background-pic{
-  height:100px;
+
+aside>.background-pic {
+  height: 100px;
   overflow: hidden;
 }
-aside>.background-pic>img{
+
+aside>.background-pic>img {
   width: 240px;
   opacity: .5;
 }
-aside>.profile-pic>img{
-    width: 70px;
-    height: 70px;
-    border-radius: 100px;
-    border: 0.5rem solid white;
-    left: 0;
-    top: 70%;
-    transform: translate(-160%,-50%);
 
+aside>.profile-pic>img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+  border: 0.5rem solid white;
+  left: 0;
+  top: 70%;
+  transform: translate(-160%, -50%);
 }
-aside>.non-pic-menu{
+
+aside>.non-pic-menu {
   margin-top: -50px;
 }
-aside >.menu> h5 {
+
+aside>.menu>h5 {
   padding-top: 20px;
   padding-right: 17px;
 }
-aside >.menu> h6 {
+
+aside>.menu>h6 {
   padding-top: 4px;
   padding-right: 20px;
 }
-section{
+
+section {
   width: calc(100vw - 240px);
-  margin-left:240px;
-  background-color: rgb(240,240,240);
+  margin-left: 240px;
+  background-color: rgb(240, 240, 240);
   padding: 1rem;
   padding-top: calc(2rem + 23px);
   display: flex;
   flex-wrap: wrap;
 }
-section > .card-list{
+
+section>.card-list {
   width: calc(33.33% - 2.5rem);
   background-color: white;
   margin: 0.75rem;
   height: 400px;
   position: relative;
-
 }
-section>.card-list>.background-pic>img{
+
+section>.card-list>.background-pic>img {
   width: 100%;
   height: 180px;
   overflow-x: hidden;
   overflow-y: hidden;
 }
 
-section>.card-list>.profile-pic>img{
+section>.card-list>.profile-pic>img {
   width: 70px;
   height: 70px;
   border-radius: 100px;
@@ -125,9 +135,10 @@ section>.card-list>.profile-pic>img{
   position: relative;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
-section>.card-list>.bottom{
+
+section>.card-list>.bottom {
   position: relative;
   left: 50%;
   top: -14%;
@@ -135,29 +146,34 @@ section>.card-list>.bottom{
   padding: 10px 20px 10px 20px;
   overflow-y: hidden;
 }
-section>.card-list>.bottom>.title{
+
+section>.card-list>.bottom>.title {
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 10px;
 }
-section>.card-list>.bottom>.text{
+
+section>.card-list>.bottom>.text {
   word-break: break-all;
   height: 100px;
 }
-section>.card-list>.bottom>.tag{
+
+section>.card-list>.bottom>.tag {
   display: flex;
   flex-wrap: wrap;
 }
-section>.card-list>.bottom>.tag>p{
-  font-size : 0.7em;
-  color: rgb(240,240,240);
+
+section>.card-list>.bottom>.tag>p {
+  font-size: 0.7em;
+  color: rgb(240, 240, 240);
   background-color: rgba(84, 82, 183, .5);
   border-radius: 2px;
   margin-right: 2px;
   padding: 2px 5px 2px 5px;
   margin-top: 15px;
 }
-section>.character-list{
+
+section>.character-list {
   width: calc(50% - 6rem);
   height: fit-content;
   background-color: white;
@@ -168,67 +184,92 @@ section>.character-list{
   display: inline;
   word-break: break-all;
 }
-section>.character-list:last-child{
+
+section>.character-list:last-child {
   margin-right: 0;
 }
-section>.character-list>.summary{
+
+section>.character-list>.summary {
   display: flex;
 }
-section>.character-list>.summary>.profile-pic>img{
+
+section>.character-list>.summary>.profile-pic>img {
   border: 1px solid black;
   border-radius: 50%;
   width: 5rem;
   height: 5rem;
 }
-section>.character-list>.summary>.right{
+
+section>.character-list>.summary>.right {
   margin-top: 5px;
   margin-left: 10px;
 }
-section>.character-list>.detail{
+
+section>.character-list>.detail {
   padding-top: 20px;
 }
 
-@media (min-width: 1450px){
-  section > .card-list{
+section>.left {
+  width: 40%;
+  background-color: white;
+}
+
+section>.right {
+  padding: 2rem;
+}
+
+@media (min-width: 1450px) {
+  section>.card-list {
     width: calc(25% - 2.5rem);
     background-color: white;
     margin: 0.75rem;
     height: 400px;
     position: relative;
   }
-  section>.character-list{
-    width: calc(33.3% - 6rem);
-  }
 }
-@media (max-width: 1150px){
-  section > .card-list{
+
+@media (max-width: 1150px) {
+  section>.card-list {
     width: calc(50% - 2.5rem);
     background-color: white;
     margin: 0.75rem;
     height: 400px;
     position: relative;
   }
+
+  section>.character-list {
+    width: calc(100% - 6rem);
+  }
+
+  section>.left {
+    width: calc(100% - 2rem);
+  }
+
+  section>.right {
+    width: calc(100% - 2rem);
+  }
 }
-@media (max-width: 845px){
-  section > .card-list{
+
+@media (max-width: 845px) {
+  section>.card-list {
     width: calc(100% - 4rem);
     background-color: white;
     margin: 0.75rem;
     height: 400px;
     position: relative;
   }
-  section>.character-list{
-    width: calc(100% - 6rem);
-  }
-  aside{
+
+  aside {
     display: none;
   }
-  section{
+
+  section {
     width: calc(100vw);
     padding-top: calc(2rem + 23px);
     margin-left: 0px;
   }
-  .header-right>.btn{
+
+  .header-right>.btn {
     display: none;
   }
 }
